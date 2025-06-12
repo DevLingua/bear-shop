@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #bab8ff;
+  --color-purple: #7c5bff;
+  --color-text: #1a1818;
+  --font-family:"Poppins", sans-serif; 
+  --breakpoint-xs: 425px;
+  --breakpoint-xlg: 1535px;
+}
+
+html{
+  font-size: 62.5%;
+}
+body{
+  background-color:#bab8ff;
+  color: #1a1818;
+  font-size: 1.7rem;
+  line-height: 1.2;
+  font-family: "Poppins", sans-serif;
+}
+
+button{
+  cursor: pointer;
+}
+
+.active{
+  color:#7c5bff ;
+}
+
+.activeBtn{
+  background-color: #7c5bff;
+  color: #fff;
+  border-radius: 0.4rem;
+  padding: 0.5em .7em;
+}
+
+
+.paginationContainer li:is(:first-child), .paginationContainer li:is(:last-child){
+  font-size: 3rem;
+}
+
+
+.paginationContainer .disabledBtn {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.sticky{
+  position: fixed;
+  background-color: #bab8ff;
+}
+
+
+@media only screen and (min-width: 1500px){
+  .cartContainer{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
