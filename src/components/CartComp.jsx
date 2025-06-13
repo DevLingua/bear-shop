@@ -33,7 +33,7 @@ const handleCheckout = async () => {
 
     console.log(selectedCurrency)
 
-    const response = await fetch("http://localhost:4000/api/create-cart", {
+    const response = await fetch("https://prickly-bear-server.onrender.com/api/create-cart", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ items }),
